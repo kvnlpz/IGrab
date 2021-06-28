@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_part"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/blackColorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/blackColorPrimary"
+        app:headerLayout="@layout/nav_header"
+        app:itemBackground="@color/blackColorPrimary"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/navigation_menu">
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackColorPrimary"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:background="@color/blackColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:background="@color/blackColorPrimary">
+
+
+            <Button
+                android:id="@+id/Download"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blackColorPrimary"
+                android:text="@string/download"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/Quit"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blackColorPrimary"
+                android:text="@string/quit"
+                android:textColor="@android:color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.drawerlayout.widget.DrawerLayout>

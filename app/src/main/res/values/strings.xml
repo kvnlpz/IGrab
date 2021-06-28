@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">IGrab</string>
+    <string name="quit">Quit</string>
+    <string name="download">Download</string>
+    <string name="download_status_ON">Downloading ON</string>
+    <string name="download_satus_OFF">downloading OFF</string>
+    <string name="lower_quality_mode">lower quality mode</string>
+    <string name="settings">Settings</string>
+    <string name="see_downloads">See downloads</string>
+    <string name="Close">NavBar</string>
+    <string name="Open">NavBar</string>
+    <string name="title_activity_donation">donation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="support_creator">support creator</string>
+
+
+</resources>
